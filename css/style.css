@@ -1,0 +1,429 @@
+:root {
+    --blue: #00669F;
+    --green: #1CD1B0;
+    --gray: #E5E5E5;
+    --dark-gray: #888888;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*header*/
+
+.title {
+    width: 100%;
+    display: flex;
+    color:black;
+    background-color: var(--blue);
+    margin: 0;
+    padding: 1em;
+    height: 7em;
+}
+
+.title img{
+    margin-right: 2rem;
+}
+
+.h-line1 {
+    color: black;
+    background-color: var(--green);
+    margin: 0;
+    padding: 1em;
+}
+
+/* header home*/
+
+.h-nav {
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.h-nav a {
+    color: white;
+    text-decoration: none;
+    padding-right: 1rem;
+}
+
+
+/*main home*/
+
+.cards-section {
+    width: 80%;
+    /* min-height: 60vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5em auto;
+}
+
+
+.card-container {        
+    width: min-content;
+    height: 500px;
+    position: relative;
+    background-color: var(--gray);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 1em;
+    border-radius: 1rem;
+}
+
+.img-heart {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+.img-back {
+    position: relative;
+    width: 200px;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.img-front {
+    position: absolute;
+    width: 40%;
+    top: 15%;
+    left: 30%;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.info-container {
+    margin-top: 5%; 
+    text-align: center;
+    padding: 1em;
+}
+
+.info-container>h2 {
+    text-align: center;
+}
+
+.info-container>p {
+    text-align: justify;
+}
+
+.info-container>button {
+   background-color: var(--blue);
+   color: white;
+   border-style: none;
+   padding: 5px;
+}
+
+.info-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.pb-container {
+    position: fixed;
+    top: 50vh;
+    right: 0;
+}
+
+.plus-button{
+    height: 4rem;
+    width: 4rem;
+    background-color: var(--blue);
+    border-radius: 50%;
+    border-style: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+ 
+}
+
+/*main login*/
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 30vw;
+}
+
+.login-title {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.login-form button{
+    background-color: var(--green);
+    font-weight: bold;
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+    border-style: none;
+    width: 100%;
+}
+
+.login-form input{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+/*main register*/
+
+.form-container {
+    margin: 0 25%;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    
+}
+
+.register-title {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+}
+
+select:disabled { 
+    color: gray; 
+}
+
+.btn-submit {
+    background-color: var(--green);
+    font-weight: bold;
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+    border-style: none;
+    width: 100%;
+}
+
+.btn-reset {
+    background-color: var(--dark-gray);
+    font-weight: bold;
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+    border-style: none;
+    width: 100%;
+    margin-right: 1rem
+}
+
+.btn-reset a {
+    text-decoration: none;
+    color: white;
+    ;
+
+}
+
+.btn-submit a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.register-form input, select{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.register-form-button-container {
+    display: flex;
+    margin-bottom: 1rem
+}
+
+/*main contact*/
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    
+}
+
+.contact-title {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+}
+
+.btn-submit {
+    background-color: var(--green);
+    font-weight: bold;
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+    border-style: none;
+    width: 100%;
+}
+
+.btn-reset {
+    background-color: var(--dark-gray);
+    font-weight: bold;
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+    border-style: none;
+    width: 100%;
+    margin-right: 1rem;
+}
+
+.btn-reset a {
+    text-decoration: none;
+    color: white;
+
+
+}
+
+.btn-submit a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.contact-form input, textarea{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.contact-form-button-container {
+    display: flex;
+    margin-bottom: 1rem
+}
+
+/* main detail */
+
+.detail-back {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+    max-height: 100vh
+    
+}
+
+.detail-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-article-container {
+    width: 40vw;
+    background-color: white;
+    position:relative;
+    border-radius: 1.5rem;
+
+}
+
+.detail-article-container h2 {
+    text-align: center;
+}
+
+.detail-article-container p {
+    text-align: justify;
+    padding: 1rem 2rem ;
+}
+
+.detail-front {
+    position: absolute;
+    top: -25%;
+    left: 40%;
+    border-radius: 50%;
+}
+
+.deatil-heart {
+   padding: 1rem;
+}
+
+
+.detail-article-link {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    height: 3rem;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    
+}
+
+.detail-article-link a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*footer*/
+
+footer {
+    background-color: var(--blue);
+    color: white;
+    padding: 2em;
+    width: 100%;
+}
+
+
+@media (min-width: 768px)  {
+
+    .title {
+        color: white;
+    }
+    .cards-section {
+        flex-direction: row;
+
+    }
+
+}
+
+@media (min-width: 1024px)  {
+
+    .title {
+        color: var(--green);
+    }
+    .cards-section {
+        flex-direction: row;
+
+    }
+
+    .img-back {
+      
+        width: 300px;
+
+    }
+
+    .img-front {
+
+        top: 30%;
+     
+    }
+
+    .info-container {
+        margin-top: 15%; 
+    }
+
+}
